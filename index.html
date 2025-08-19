@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kingsukh Guest House</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">Kingsukh Guest House</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#rooms">Rooms</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <form class="form-inline">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-success my-2 my-sm-0"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary" href="#contact">Book Now</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="container-fluid home-section">
+      <div class="overlay">
+        <h1>Make Yourself At Home</h1>
+        <h2>In Our <span class="highlight">Guest House</span></h2>
+        <p>Simple - Unique - Friendly</p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container-fluid about-section">
+      <div class="overlay">
+        <div class="row">
+          <div class="col-md-4">
+            <img
+              src="assets\header.jpg  "
+              alt="About Left Image"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md text-center">
+            <h2>About Us</h2>
+            <p>
+              Welcome to our guest house, where we believe that the best
+              holidays start right here! We pride ourselves on offering a
+              simple, unique, and friendly environment that feels just like
+              home. Whether you’re here for a relaxing getaway or an adventure,
+              our warm and inviting atmosphere ensures that every guest enjoys a
+              comfortable and memorable stay. Make yourself at home and let us
+              help you create unforgettable moments during your visit.
+            </p>
+            <p>
+              <strong>Address:</strong> beside Barshal Water Tank, Manpur,
+              Barhanti, West Bengal 723156
+            </p>
+            <p><strong>Contact:</strong> 09007062180</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="container-fluid services-section">
+      <div class="overlay">
+        <div class="white-box">
+          <h2>Services</h2>
+          <p>Strive Only For The Best.</p>
+          <ul>
+            <li>High Class Security</li>
+            <li>24 Hours Room Service</li>
+            <li>Restaurant</li>
+            <li>Tourist Guide Support</li>
+            <li>And more...</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="container-fluid rooms-section">
+      <div class="container">
+        <h2>Our Rooms</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card room-card">
+              <img src="assets/room1.jpg" class="card-img-top" alt="Room 1" />
+              <div class="card-body">
+                <h5 class="card-title">Deluxe Room</h5>
+                <p class="card-text">
+                  A luxurious room with all modern amenities.
+                </p>
+                <button class="btn btn-success book-room-btn" data-room="Deluxe Room">Book This Room</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card room-card">
+              <img src="assets/large.jpg" class="card-img-top" alt="Room 2" />
+              <div class="card-body">
+                <h5 class="card-title">Standard Room</h5>
+                <p class="card-text">
+                  A comfortable room with essential facilities.
+                </p>
+                <button class="btn btn-success book-room-btn" data-room="Standard Room">Book This Room</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card room-card">
+              <img src="assets/recep.jpg" class="card-img-top" alt="Room 3" />
+              <div class="card-body">
+                <h5 class="card-title">Suite</h5>
+                <p class="card-text">
+                  A spacious suite with a separate living area.
+                </p>
+                <button class="btn btn-success book-room-btn" data-room="Suite">Book This Room</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card room-card">
+              <img src="assets/small.jpg" class="card-img-top" alt="Room 4" />
+              <div class="card-body">
+                <h5 class="card-title">Family Room</h5>
+                <p class="card-text">A large room perfect for families.</p>
+                <button class="btn btn-success book-room-btn" data-room="Family Room">Book This Room</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="container-fluid gallery-section">
+      <div class="container">
+        <h2>Gallery</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="gallery-card">
+              <img
+                src="assets\baranti.webp"
+                class="img-fluid"
+                alt="Gallery Image 1"
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="gallery-card">
+              <img
+                src="assets\flower.jpg"
+                class="img-fluid"
+                alt="Gallery Image 2"
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="gallery-card">
+              <img
+                src="assets\mithonDam.webp"
+                class="img-fluid"
+                alt="Gallery Image 3"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="gallery-card">
+              <img
+                src="assets\service.jpg"
+                class="img-fluid"
+                alt="Gallery Image 4"
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="gallery-card">
+              <img src="assets\1.jpg" class="img-fluid" alt="Gallery Image 5" />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="gallery-card">
+              <img
+                src="assets\header.jpg"
+                class="img-fluid"
+                alt="Gallery Image 6"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container-fluid contact-section">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card contact-info-card">
+              <div class="card-body">
+                <p>
+                  <strong>Address:</strong> beside Barshal Water Tank, Manpur,
+                  Barhanti, West Bengal 723156
+                </p>
+                <p><strong>Contact:</strong> 09007062180</p>
+                <div class="social-icons">
+                  <a href="https://www.instagram.com" target="_blank"
+                    ><img src="assets\instagram.png" alt="i" /><i
+                      class="fab fa-instagram"
+                    ></i
+                  ></a>
+                  <a href="https://www.youtube.com" target="_blank"
+                    ><img src="assets\youtube.png" alt="y" /><i
+                      class="fab fa-youtube"
+                    ></i
+                  ></a>
+                  <a href="https://www.whatsapp.com" target="_blank"
+                    ><img src="assets\twitter.png" alt="w" /><i
+                      class="fab fa-whatsapp"
+                    ></i
+                  ></a>
+                  <a href="https://www.linkedin.com" target="_blank"
+                    ><img src="assets\facebook.png" alt="l" /><i
+                      class="fab fa-linkedin"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card contact-form-card">
+              <div class="card-body">
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="firstName">First Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="firstName"
+                        placeholder="First Name"
+                      />
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="lastName">Last Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="lastName"
+                        placeholder="Last Name"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="mobile">Mobile Number</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="mobile"
+                      placeholder="Mobile Number"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Write Your Message Here</label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      rows="4"
+                      placeholder="Your Message"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">
+                    Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- Map Section -->
+    <section id="map" class="container my-5">
+      <h2>Find Us</h2>
+      <div style="width: 100%; height: 400px;">
+        <iframe
+          src="https://www.google.com/maps?q=Barhanti,West+Bengal,India&output=embed"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+    </section>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kingsukh Guest House Footer</title>
+  <link rel="stylesheet" href="footer.css">
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      
+      <!-- About Section -->
+      <div class="footer-col about">
+        <h2>Kingsukh <br> Guest <br> House</h2>
+        <p>
+          Discover a world of comfort, luxury, and adventure as you explore our curated 
+          selection of hotels, making every moment of your getaway truly extraordinary.
+        </p>
+        <button class="btn" onclick="bookNow()">BOOK NOW</button>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h3>QUICK LINKS</h3>
+        <ul>
+          <li><a href="#">Browse Destinations</a></li>
+          <li><a href="#">Special Offers & Packages</a></li>
+          <li><a href="#">Room Types & Amenities</a></li>
+          <li><a href="#">Customer Reviews & Ratings</a></li>
+          <li><a href="#">Travel Tips & Guides</a></li>
+        </ul>
+      </div>
+
+      <!-- Our Services -->
+      <div class="footer-col">
+        <h3>OUR SERVICES</h3>
+        <ul>
+          <li><a href="#">Concierge Assistance</a></li>
+          <li><a href="#">Flexible Booking Options</a></li>
+          <li><a href="#">Airport Transfers</a></li>
+          <li><a href="#">Wellness & Recreation</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="footer-col">
+        <h3>CONTACT US</h3>
+        <p>Address: Beside Barshal Water Tank, Manpur, Barhanti, West Bengal 723156</p>
+        <p>Email: <a href="mailto:kkghosh0099@gmail.com">kkghosh0099@gmail.com</a></p>
+        <p>Phone: <a href="tel:+919007062180">+91 9007062180</a></p>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="footer.js"></script>
+</body>
+</html>
+
+
+
