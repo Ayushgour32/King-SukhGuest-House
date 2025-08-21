@@ -423,8 +423,19 @@
   </footer>
 
   <script src="footer.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var toggler = document.querySelector('.navbar-toggler');
+    var menu = document.getElementById('navbarNav');
+    toggler.addEventListener('click', function() {
+      menu.classList.toggle('show');
+    });
+  });
+</script>
+  
 </body>
 </html>
+
 
 
 
